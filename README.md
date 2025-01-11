@@ -1,86 +1,40 @@
-# AquaFizz-Employee-Compliance-and-Sales-Analysis-Project-Excel-
-Employee Working Hours and Customer Order Analysis
-
-**Project Overview**
+## AquaFizz - Employee Compliance and Sales Analysis Project
 
 **Objective**
-The main goal of this project is to analyze employee working hours and customer order data to ensure compliance with AquaFizz’s policies and optimize sales. The analysis involves examining data on working hours for compliance and generating business insights from customer and sales data.
-
-Company Background:
-AquaFizz is a newly established beverage startup offering health-focused sparkling water beverages. The company aims to provide refreshing, nutrient-enhanced drinks while promoting overall wellness.
+The goal of this project is to analyze employee working hours for compliance with AquaFizz’s policies and optimize sales by analyzing customer order data. The analysis focuses on ensuring employee performance aligns with company standards and identifying opportunities to enhance sales strategies.
 
 **Business Task**
-Analyzing employee working hours for compliance with the company's standards.
-Analyzing sales data to gain insights into customer behavior and identify top-performing products.
+Employee Working Hours Compliance: Analyzing employee work hours against company standards.
+Sales Insights: Examining sales data to identify top-performing products and customer behavior.
 Data Understanding
 Employee Working Hours Data
 
-Dataset Name: Workers Timing Dataset
-Dataset Includes:
-Time of entry: Timestamp of when employees clocked in.
-Time of exit: Timestamp of when employees clocked out.
+**Dataset Name: Workers Timing Dataset**
+Includes:Time of entry and exit for employees.
 
-Orders Data
-Dataset Name: Orders Dataset
-Dataset Includes:
-date: Date the order was placed.
-order_id: Unique identifier for each order.
-customer_id: Identifier linking the order to a customer.
-beverage: The type of beverage ordered.
-cost_price: The cost price of the beverage.
-selling_price: The price at which the beverage was sold.
+Orders Dataset
+Includes:Order details (order ID, customer ID, beverage, cost price, selling price).
 
-Customers Data
-Dataset Name: Customer Dataset
-Dataset Includes:
-customer_id: Unique identifier for each customer.
-first_name: Customer’s first name.
-last_name: Customer’s last name.
-email: Customer’s email address.
-city: The city where the customer is located.
-country: The country of residence for the customer.
-user: User type identifier.
-code: Customer code for internal use.
+Customers Data Includes:Customer details (ID, name, email, location).
 
 Data Preprocessing
-Employee Working Hours Data Processing:
-Convert Working Time to Decimal:
-Convert the benchmark working time (8 hours and 30 minutes) into decimal format (8.5 hours).
-Calculate Actual Working Hours:
-Convert minutes worked into fractions of an hour (e.g., 30 minutes = 0.5 hours) and sum them with whole hours worked.
-Determine Compliance:
-Compare actual working hours with the benchmark (8.5 hours) with a tolerance of ±6 minutes.
-
-Hours and Minutes Worked Calculation:
-Break down the total hours worked into whole hours and minutes for clear visualization.
-
-Deviation in Minutes:
-For non-compliant entries, calculate the deviation in minutes compared to the benchmark time.
-
-Non-Compliance Message:
-Generate a message for non-compliant cases with specific details about the date, hours worked, and deviation.
-
-Orders and Customers Data Processing:
-Profit Calculation:
-Calculate profit per sale as the difference between selling_price and cost_price for each order in the Orders dataset.
-
-Top 5 Customers by Sales:
-Aggregate sales by customer_id and identify the top 5 customers with the highest total sales.
-
-Top Cities by Sales:
-Aggregate sales by city (from the Customers dataset) and identify the top-performing cities contributing the most to sales.
-
-Monthly Sales Analysis:
-Extract the month from the order date and calculate the total profit for each month. Create a chart to visualize monthly sales trends.
-
-Highest Profit % Beverage:
-Calculate the profit margin for each beverage — ((Selling Price - Cost Price) / Cost Price) — and identify the beverage with the highest profit margin.
-
-Top 10 Beverage Purchasers:
-Identify the top 10 customers who purchased the most beverages based on the total number of orders.
-
-Excel Dashboard Creation:
-Combine results into a comprehensive Excel dashboard for easy visualization of key insights.
+Employee Working Hours
+Convert working time to decimal and calculate actual hours worked.
+Compare actual hours with the benchmark (8.5 hours) to determine compliance.
+Identify and flag non-compliant entries, calculate deviation, and generate non-compliance messages.
+Orders and Customers Data
+Profit Calculation: Compute profit per sale.
+Top 5 Customers by Sales: Identify customers with the highest total sales.
+Top Cities by Sales: Identify cities contributing the most to sales.
+Monthly Sales Analysis: Visualize monthly sales trends.
+Highest Profit % Beverage: Identify the beverage with the highest profit margin.
+Top 10 Beverage Purchasers: Identify the top 10 customers by number of orders.
 
 **Business Value**
-This project provided actionable insights to AquaFizz for optimizing employee performance and improving customer sales strategies. By analyzing working hours and sales data, the company can ensure compliance, boost efficiency, and increase profitability.
+This project provides actionable insights to AquaFizz, helping optimize employee performance and improve sales strategies. By ensuring compliance and analyzing customer behavior, AquaFizz can boost efficiency and profitability.
+
+**Aim of the Project**
+To analyze employee working hours for compliance and identify insights from customer orders that will optimize AquaFizz's sales strategy and improve operational efficiency.
+
+**Conclusion**
+By leveraging data analysis and creating visualizations, this project helps AquaFizz ensure compliance with employee work standards and make informed decisions to enhance sales performance. The dashboard offers a clear view of key metrics, contributing to better resource management and profitability.
